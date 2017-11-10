@@ -1,0 +1,24 @@
+#Nombre : Zavaleta Bueno Romel Rolando 20120236F
+#Respuesta 2: Eejrcicios teoricos
+
+###La vectorizacion es define como el hecho de poder hacer uso de los vectores extensivamente en R, 
+###evitando realizar bucles y operar de manera facil sobre estos.
+
+##Ejemplo :
+
+vector1<-c(1:6)
+vector1<-vector1*2
+vector1
+
+###No es necesario un bucle para ir duplicando todos los elementos.
+
+
+###El reciclado , es realizar operacion sobre vectores de diferentes dimensiones , que en vez de darnos un error
+#Aprovecha el vector de menor dimension para repetir sus datos y poder efectuar la operacion con el otro vector.
+
+
+vecx<-c(1:3)
+vecy<-c(4:7)
+resul<-vecx+vecy
+resul
+
