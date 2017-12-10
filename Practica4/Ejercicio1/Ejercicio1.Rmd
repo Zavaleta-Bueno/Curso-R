@@ -1,0 +1,103 @@
+---
+title: "Ejercicio1"
+output: html_document
+---
+
+```{r }
+
+popular <- data.frame(m = rnorm(100, 160, 20), f = rnorm(100, 160, 20))
+prox.gen <- function(popular) {
+popular$m <- sample(popular$m)
+popular$m <- apply(popular, 1, mean)
+popular$f <- popular$m
+return(popular)
+}
+
+```
+
+## 1 Generacion
+
+
+```{r}
+popular<-prox.gen(popular)
+hist(popular$m,main="Alturas Masculinas 1 generacion",border="black", col="red")
+
+
+```
+## 2 Generacion
+
+
+```{r}
+popular<-prox.gen(popular)
+hist(popular$m,main="Alturas Masculinas 2 generacion",border="black", col="red")
+
+
+```
+
+## 3 Generacion
+
+
+```{r}
+popular<-prox.gen(popular)
+hist(popular$m,main="Alturas Masculinas 3 generacion",border="black", col="red")
+
+
+```
+## 4 Generacion
+
+
+```{r}
+popular<-prox.gen(popular)
+hist(popular$m,main="Alturas Masculinas 4 generacion",border="black", col="red")
+
+
+```
+
+## 5 Generacion
+
+
+```{r}
+popular<-prox.gen(popular)
+hist(popular$m,main="Alturas Masculinas 5 generacion",border="black", col="red")
+
+
+```
+
+## 6 Generacion
+
+
+```{r}
+popular<-prox.gen(popular)
+hist(popular$m,main="Alturas Masculinas 6 generacion",border="black", col="red")
+
+
+```
+
+## 7 Generacion
+
+
+```{r}
+popular<-prox.gen(popular)
+hist(popular$m,main="Alturas Masculinas 7 generacion",border="black", col="red")
+
+
+```
+
+## 8 Generacion
+
+
+```{r}
+popular<-prox.gen(popular)
+hist(popular$m,main="Alturas Masculinas 8 generacion",border="black", col="red")
+
+
+```
+## 9 Generacion
+
+
+```{r}
+popular<-prox.gen(popular)
+hist(popular$m,main="Alturas Masculinas 9 generacion",border="black", col="red")
+
+
+```

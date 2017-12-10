@@ -1,0 +1,48 @@
+---
+title: "Ejercicio5"
+output: html_document
+---
+
+# Ejercicio 5
+
+
+
+
+
+## Grafica 
+
+```{r }
+plot.new()
+
+plot.window(range(pressure$temperature),
+            range(pressure$pressure))
+box()
+axis(1)
+axis(2)
+points(pressure$temperature, pressure$pressure)
+mtext("temperatura", side=1, line=3)
+mtext("presion", side=2, line=3)
+mtext("Presion de vapor \ncomo una funcion de la Temperatura ",
+      side=3, line=1, font=2)
+```
+
+* El comando __plot.new()__  prepara a R para generar un nuevo diagrama
+*  __plot.window()__  Establece las coordenadas para el graficos
+*  __axis(1)__ Dibuja el eje X
+*  __axis(2)__ Dibuja el eje Y
+*  __points()__ datos a graficas
+*  __box()__ Rodea al grafico con un cuadro.
+*  __mtext()__ coloca texto en los margenes del grafico, donde side especifica en que margen, line es la distancia respecto al margen y font el la fuente.
+
+
+
+```{r }
+library(grid)
+
+
+
+```
+
+
+
+
